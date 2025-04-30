@@ -83,7 +83,7 @@
      "))
     (body
      (h1 "Resultados da Avaliação")
-     (p ,(format "Média Geral: ~a" media))
+     (p ,(format "Média Geral: ~a" (real->decimal-string media 1)))
      (h2 "Notas por Critério:")
      (ul
       ,@(for/list ([cp criterios-perguntas] [n notas])
